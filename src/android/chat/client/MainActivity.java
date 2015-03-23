@@ -19,15 +19,15 @@ public class MainActivity extends ActionBarActivity {
 	public void loginButton(View view){
 		Intent intent_ChatManager = new Intent(this,ChatManager.class);
 		EditText editText_nickName = (EditText) findViewById(R.id.editText_nickname);
-	    String nickName = editText_nickName.getText().toString();
-	    EditText editText_IP = (EditText) findViewById(R.id.editText_IP);
-	    String host = editText_IP.getText().toString();
-	    EditText editText_port = (EditText) findViewById(R.id.editText_port);
-	    String port = editText_port.getText().toString();
-	    String[] params = {nickName,host,port};
-	    new ConnectTask().execute(params);
-	    intent_ChatManager.putExtra(Constants.USER_TAG, nickName);
-	    startActivity(intent_ChatManager);
+		String nickName = editText_nickName.getText().toString();
+		EditText editText_IP = (EditText) findViewById(R.id.editText_IP);
+		String host = editText_IP.getText().toString();
+		EditText editText_port = (EditText) findViewById(R.id.editText_port);
+		String port = editText_port.getText().toString();
+		String[] params = {nickName,host,port};
+		new ConnectTask().execute(params);
+		intent_ChatManager.putExtra(Constants.USER_TAG, nickName);
+		startActivity(intent_ChatManager);
 	}
 	
 	@Override
