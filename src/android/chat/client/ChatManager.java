@@ -37,15 +37,15 @@ public class ChatManager extends Activity {
 	}
 	
 	public void sendButtonListener(){
-		 sendButton.setOnClickListener(new View.OnClickListener() {
-             public void onClick(View v) {
-            	 String message = messageText.getText().toString();
-            	 messageText.setText("");
-            	 Toast.makeText(ChatManager.this, message + " is sent", Toast.LENGTH_SHORT).show();
-            	 SendMessageTask task = new SendMessageTask(sender, message,reciever.getText().toString());
-            	 task.start();
-            	 }
-         });
+		sendButton.setOnClickListener(new View.OnClickListener() {
+             		public void onClick(View v) {
+            			String message = messageText.getText().toString();
+            	 		messageText.setText("");
+            	 		Toast.makeText(ChatManager.this, message + " is sent", Toast.LENGTH_SHORT).show();
+            	 		SendMessageTask task = new SendMessageTask(sender, message,reciever.getText().toString());
+            	 		task.start();
+            	 	}
+         	});
 
 	}
 	
