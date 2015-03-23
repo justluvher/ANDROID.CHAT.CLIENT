@@ -4,10 +4,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.nio.ByteBuffer;
-
-
-//import android.chat.client.JavaChatNio2.src.chat.client.Message;
-//import chat.client.Message;
 import android.util.Log;
 
 public class SendMessageTask extends Thread {
