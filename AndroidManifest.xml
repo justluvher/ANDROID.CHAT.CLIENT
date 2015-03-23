@@ -34,10 +34,7 @@
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="android.chat.client.MainActivity" />
-    </activity>
-         
-         
-         
+        </activity>
     </application>
 
 </manifest>
