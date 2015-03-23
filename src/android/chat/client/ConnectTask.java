@@ -18,7 +18,6 @@ public class ConnectTask extends AsyncTask<String, Void, String> {
 	protected String doInBackground(String... params) {
 		try {
 			Log.d(Constants.DEBUG_TAG, "System started");
-			System.out.println("program started");
 			makeConnection(params[1], Integer.parseInt(params[2]),params[0]);
 		} catch (IOException e) {
 			Log.d(Constants.DEBUG_TAG, "Unable to connect to server");
