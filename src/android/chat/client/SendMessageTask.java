@@ -20,11 +20,11 @@ public class SendMessageTask extends Thread {
 	}
 
 	public static byte[] serialize(Message msg) throws IOException {
-	    Object obj = msg;
+		Object obj = msg;
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
-	    ObjectOutputStream os = new ObjectOutputStream(out);
-	    os.writeObject(obj);
-	    return out.toByteArray();
+		ObjectOutputStream os = new ObjectOutputStream(out);
+		os.writeObject(obj);
+		return out.toByteArray();
 	}
 		
 	@Override
